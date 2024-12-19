@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar C++",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "-o",
+                "main.exe",
+                "main.cpp",
+                "TabelaHash.cpp",
+                "ListaEncadeada.cpp",
+                "No.cpp"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Compilação de múltiplos arquivos C++ em um único executável."
+        },
+        {
+            "label": "Executar Programa",
+            "type": "shell",
+            "command": ".\\tabela_hash.exe",
+            "group": "test",
+            "detail": "Executa o programa compilado no diretório atual."
+        }
+    ]
+}
